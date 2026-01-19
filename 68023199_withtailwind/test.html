@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modern Profile Introduction Variant 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .vibrant-gradient {
+            background: linear-gradient(135deg, #ff6b6b, #845ef7, #135bec, #4dabf7);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ff6b6b, #845ef7, #135bec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d121b] dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 z-50 w-full border-b border-solid border-[#e7ebf3] dark:border-white/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-3">
+<div class="mx-auto flex max-w-[1200px] items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">V1.Studio</h2>
+</div>
+<div class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Showcase</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Process</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Talk to Me</a>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold tracking-wide hover:opacity-90 transition-all">
+                        Hire Me
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col pt-16">
+<!-- Hero Split Section -->
+<section class="flex flex-col lg:flex-row min-h-[90vh] w-full items-stretch">
+<!-- Left Content -->
+<div class="flex flex-1 flex-col justify-center px-10 md:px-20 lg:px-40 py-20 bg-white dark:bg-background-dark">
+<div class="max-w-[540px]">
+<div class="vibrant-gradient h-1.5 w-24 rounded-full mb-8"></div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] mb-6">
+                            Alex <br/><span class="text-gradient">Rivera</span>
+</h1>
+<!-- ProfileHeader details -->
+<div class="mb-10">
+<p class="text-xl font-semibold text-primary mb-2">Creative UI/UX Designer &amp; Frontend Developer</p>
+<div class="flex items-center gap-2 text-[#4c669a] dark:text-gray-400">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span class="text-base font-medium">Based in San Francisco, CA</span>
+</div>
+</div>
+<!-- BodyText content -->
+<p class="text-lg leading-relaxed text-[#4c669a] dark:text-gray-300 mb-10">
+                            I am a passionate designer with over 8 years of experience creating digital products that are both beautiful and functional. My approach blends technical expertise with a deep understanding of user psychology to deliver impactful experiences.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-14 px-6 vibrant-gradient text-white text-base font-bold shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all">
+<span>Get in Touch</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-14 px-6 bg-[#e7ebf3] dark:bg-white/5 text-[#0d121b] dark:text-white text-base font-bold hover:bg-[#d8dee9] dark:hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined mr-2">download</span>
+<span>Download CV</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Image -->
+<div class="hidden lg:block lg:w-[45%] xl:w-[40%] sticky top-0 h-screen overflow-hidden">
+<div class="h-full w-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a creative male designer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-cwFf_SIJmCF9FWWYhmq3UG0TkbQRmcnn6Xz1Qnc69r2R8y3cTC8Fxe97nlXVK0A65NKYen2iw-1tY_1Zd4xyyslAll-bz7yv_W0ELs2iRanXtxWei80XnskCVqUuPuFlAtdQ3jYEhl4TsLUUMMFhPZIxtW2e6PEhtPL_9r2CCj--AWfiAaMumaeKs9DFIuNohA_f-i2rhtWf5HEC0-rJIKGiQLwxXe5M7uyd2rwj_-Y_vYOZ_cyxm3No1nIEWnNpAo-D4rehTEs");'>
+</div>
+<!-- Decorative Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/40 to-transparent pointer-events-none"></div>
+</div>
+</section>
+<!-- About & Skills Section -->
+<section class="bg-background-light dark:bg-background-dark/50 py-24 px-10 md:px-20">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Left: About Me Details -->
+<div>
+<h2 class="text-3xl font-extrabold tracking-tight mb-8">About Me</h2>
+<div class="space-y-6 text-lg text-[#4c669a] dark:text-gray-300">
+<p>
+                                    My design philosophy is rooted in the belief that great design is invisible. It should feel intuitive and effortless. Over the past decade, I've partnered with startups and Fortune 500 companies to solve complex problems through simple, human-centric solutions.
+                                </p>
+<p>
+                                    When I'm not pushing pixels, you can find me exploring the rugged coastlines of Northern California or experimenting with generative art.
+                                </p>
+</div>
+<!-- Contact Info -->
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-white/5 border border-[#e7ebf3] dark:border-white/10 shadow-sm">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Email</p>
+<p class="text-sm font-semibold">alex@v1studio.io</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-white/5 border border-[#e7ebf3] dark:border-white/10 shadow-sm">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div>
+<p class="text-xs font-bold text-gray-400 uppercase tracking-widest">LinkedIn</p>
+<p class="text-sm font-semibold">/in/alexrivera-ux</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Skills with Colorful Progress Bars -->
+<div>
+<h2 class="text-3xl font-extrabold tracking-tight mb-8">My Skills</h2>
+<div class="space-y-8">
+<!-- Skill Item -->
+<div>
+<div class="flex justify-between items-end mb-3">
+<p class="text-lg font-bold">UI/UX Design</p>
+<span class="text-sm font-bold text-primary">95%</span>
+</div>
+<div class="h-3 w-full bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
+<div class="h-full rounded-full" style="width: 95%; background: linear-gradient(90deg, #ff6b6b, #845ef7);"></div>
+</div>
+</div>
+<!-- Skill Item -->
+<div>
+<div class="flex justify-between items-end mb-3">
+<p class="text-lg font-bold">Visual Brand Identity</p>
+<span class="text-sm font-bold text-primary">88%</span>
+</div>
+<div class="h-3 w-full bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
+<div class="h-full rounded-full" style="width: 88%; background: linear-gradient(90deg, #845ef7, #135bec);"></div>
+</div>
+</div>
+<!-- Skill Item -->
+<div>
+<div class="flex justify-between items-end mb-3">
+<p class="text-lg font-bold">Frontend Development</p>
+<span class="text-sm font-bold text-primary">82%</span>
+</div>
+<div class="h-3 w-full bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
+<div class="h-full rounded-full" style="width: 82%; background: linear-gradient(90deg, #135bec, #4dabf7);"></div>
+</div>
+</div>
+<!-- Skill Item -->
+<div>
+<div class="flex justify-between items-end mb-3">
+<p class="text-lg font-bold">Motion Graphics</p>
+<span class="text-sm font-bold text-primary">75%</span>
+</div>
+<div class="h-3 w-full bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
+<div class="h-full rounded-full" style="width: 75%; background: linear-gradient(90deg, #4dabf7, #ff6b6b);"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Creative Footer / Contact CTA -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#e7ebf3] dark:border-white/10 py-16 px-10">
+<div class="mx-auto max-w-[1200px] text-center">
+<h3 class="text-3xl font-extrabold mb-4">Let's build something <span class="text-gradient">remarkable</span>.</h3>
+<p class="text-[#4c669a] dark:text-gray-400 mb-8 max-w-lg mx-auto">Currently accepting new projects and design consultations for 2024.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-12 mt-12 border-t border-[#e7ebf3] dark:border-white/10 pt-12">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">explore</span>
+<span class="font-bold text-sm tracking-widest uppercase">Location</span>
+<span class="text-gray-500" data-location="San Francisco, USA">San Francisco, CA</span>
+</div>
+<div class="h-px w-12 bg-gray-200 dark:bg-white/10 hidden md:block"></div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">diversity_1</span>
+<span class="font-bold text-sm tracking-widest uppercase">Experience</span>
+<span class="text-gray-500">8+ Years Senior Role</span>
+</div>
+<div class="h-px w-12 bg-gray-200 dark:bg-white/10 hidden md:block"></div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">auto_awesome</span>
+<span class="font-bold text-sm tracking-widest uppercase">Philosophy</span>
+<span class="text-gray-500">Less is More</span>
+</div>
+</div>
+<p class="mt-20 text-xs font-medium text-gray-400 uppercase tracking-widest">© 2024 Alex Rivera. Designed with precision.</p>
+</div>
+</footer>
+</main>
+</div>
+</body></html>
