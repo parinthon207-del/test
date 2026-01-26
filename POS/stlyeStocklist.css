@@ -8,21 +8,13 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-.container{
+.main-container{
     max-width: 1140px;
-    margin: 3 auto;
-    padding: 2rem;
+    margin: 1rem;
 }
 .nav-con{
     justify-content: space-between;
     align-items: center;
-}
-.logo a{
-    font-size: 2rem;
-    color: white ;
-    
-    text-decoration: none;
-    font: optional;
 }
 .dashboard a{
     font-size: 2rem;
@@ -35,15 +27,12 @@
     align-items: center;
 }
 .menu li{
-    margin: 0.5rem; /*ระยะห่างbox*/
+    margin: 0 0.5rem 0.5rem 0; /*ระยะห่างbox*/
 }
 .menu li a{
     color: black;
     text-decoration: none;
     font-size: 24px;
-}
-.Logo{
-    
 }
 .gradient-text {
     background: linear-gradient(to top left, #000000, #E4B8B8);
@@ -53,7 +42,7 @@
     font-weight: bold;
     flex: none;
 }
-
+ 
 .gradient-text-color a{
     text-decoration: none;
 }
@@ -65,7 +54,7 @@
     font-weight: bold;  
 }
 .gradient-text a{
-    display: flex;   
+    display: flex;  
     text-decoration: none;
 }
 .khamu{
@@ -78,26 +67,136 @@
     font-size: 2rem;
     font-weight: bold;
 }
-.menu .btm{
+.menu .btn{
     background-color: white;
     padding: 0.45rem;
-    border-radius: 5px;
+    border-radius: 13px;
     display: inline-block; /* หรือ block เพื่อให้กำหนด width ได้ */
     width: 300px;          /* กำหนดความกว้างที่ต้องการ (ปรับเลขได้ตามชอบ) */
     border: 2px solid #AEB4BB;
-    
+    font-size: 20px;
+   
 }
-.nav-section{
+.side-bar{ /*bg*/
     background-color: #F7FAFC;
-    margin: 1rem;
     border-radius: 8px;
     width:380px;
     min-height: 100vh;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 body{
     display: flex;
 }
-.page2{
-    max-width:  auto;
+.content{
     padding: 2rem;
+    margin: 1rem;
+    flex: 1;
+    max-width: auto; /* (แนะนำให้ลบบรรทัดนี้ออกครับ เพราะค่า auto ไม่มีผลใน max-width) */
+    padding: 2rem;
+    margin: 1rem;
 }
+.search-box{
+    background-color: #E8EDF2;
+    height: 50px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    color: #4D7399;
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px ;
+}
+.filter-container{
+    display: flex;
+    justify-content: space-between; /* ดันลูก 2 คนไปคนละฝั่ง */
+    margin-top: 1rem;               /* เว้นห่างจากช่องค้นหา */
+    width: 100%;
+    max-width: 800px;               /* ปรับให้เท่ากับช่องค้นหา */
+    flex-wrap: wrap;                /* ถ้าจอมือถือเล็กมาก ให้ปัดลงบรรทัดใหม่ได้ */
+    gap: 10px;                      /* กันติดกันเกินไปตอนจอย่อ */
+}
+.filter-group-left filter-group-right{
+    display: flex;
+    gap: 10px; /* ระยะห่างระหว่างปุ่มแต่ละก้อน */
+}
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #E8EDF2;      /* สีพื้นหลังเทาอ่อน */
+    color: #959fa8;                 /* สีตัวหนังสือ */
+    border: none;
+    border-radius: 8px;             /* ความมน */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;               /* เอฟเฟกต์นุ่มๆ ตอนชี้ */
+}
+.filter-btn:hover {
+    background-color: #D0D6DC;
+}
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+}
+ 
+.stock-table {
+    width: 100%;
+    border-collapse: collapse; /* ทำให้เส้นตารางไม่ซ้อนกัน */
+    font-size: 16px;
+}
+ 
+/* ตกแต่งส่วนหัวตาราง */
+.stock-table th {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid #E8EDF2; /* เส้นใต้หัวข้อ */
+    color: #4D7399;
+}
+ 
+/* ตกแต่งเนื้อหาแต่ละแถว */
+.stock-table td {
+    padding: 15px;
+    border-bottom: 1px solid #E8EDF2; /* เส้นคั่นระหว่างแถว */
+    vertical-align: middle;
+}
+ 
+/* ปรับสีข้อความประเภท */
+.type-meat { color: #4D7399; }
+.type-other { color: #8898AA; }
+ 
+/* ตกแต่ง Badge สถานะ */
+.status {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+ 
+.status.warning {
+    background-color: #F8E391; /* สีเหลืองใกล้หมด */
+    color: #856404;
+}
+ 
+.status.ok {
+    background-color: #E8EDF2; /* สีเทาปกติ */
+    color: #4D7399;
+}
+ 
+.status.danger {
+    background-color: #F1948A; /* สีแดงหมดสต็อก */
+    color: white;
+}
+ 
+/* ปุ่มแก้ไข */
+.edit-btn {
+    background-color: #E8EDF2;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 

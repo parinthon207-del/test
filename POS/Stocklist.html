@@ -6,12 +6,12 @@
     <title>รายการสินค้า</title>
     <link rel="stylesheet" href="stlyeStocklist.css">
     <script>scr="https://cnd.tailwindcss.com"</script>
-
+ 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
 </script>
-
+ 
 </head>
 <body>
     <section class="main-container">
@@ -26,19 +26,71 @@
                     <div class="dashboard"><a href="#">Dashboard</a></div>
                 </div>
                 <ul class="menu">
-                    <li><a href="#" class="btm">ภาพรวมร้านค้า</a></li> 
-                    <li><a href="#" class="btm">สต็อกสินค้า</a></li>
-                    <li><a href="#" class="btm">ลูกค้าสมาชิก</a></li>
-                    <li><a href="#" class="btm">การวิเคราะห์หน้าร้าน</a></li>
-                    <li><a href="#" class="btm">การตั้งค่า</a></li>
+                    <li><a href="#" class="btn">ภาพรวมร้านค้า</a></li>
+                    <li><a href="#" class="btn">สต็อกสินค้า</a></li>
+                    <li><a href="#" class="btn">ลูกค้าสมาชิก</a></li>
+                    <li><a href="#" class="btn">การวิเคราะห์หน้าร้าน</a></li>
+                    <li><a href="#" class="btn">การตั้งค่า</a></li>
                 </ul>
             </div>
         </div>
     </nav>    
 </section>
-
+ 
 <section class="content">
     <h1>รายการสินค้า</h1>
+    <div class="search-box">ค้นหาวัตถุดิบ</div>
+ 
+    <div class="filter-container">
+        <div class="filter-group-left">
+            <button class="filter-btn">รายการทุกประเภท</button>
+            <button class="filter-btn">เนื้อสัตว์</button>
+            <button class="filter-btn">ผัก ผลไม้</button>
+            <button class="filter-btn">อื่นๆ</button>
+        </div>
+ 
+        <div class="filter-group-right">
+            <button class="filter-btn">ใกล้หมดสต็อก</button>
+            <button class="filter-btn">หมดสต็อก</button>
+        </div>
+    </div>
+ 
+    <div class="table-container">
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>วัตถุดิบ</th>
+                    <th>ประเภท</th>
+                    <th>ราคา (บาท)</th>
+                    <th>คงเหลือในสต็อก</th>
+                    <th>สถานะ</th>
+                    <th>แก้ไข</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ขาหมู</td>
+                    <td class="type-meat">เนื้อสัตว์</td>
+                    <td>255</td>
+                    <td>8</td>
+                    <td><span class="status warning">ใกล้หมดสต็อก</span></td>
+                    <td><button class="edit-btn">✎</button></td>
+                </tr>
+                <tr>
+                    <td>ไข่ไก่</td>
+                    <td class="type-other">อื่น ๆ</td>
+                    <td>150</td>
+                    <td>50</td>
+                    <td><span class="status ok">อยู่ในสต็อก</span></td>
+                    <td><button class="edit-btn">✎</button></td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+ 
 </section>
+ 
+ 
 </body>
 </html>
+ 
