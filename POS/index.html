@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Dashboard</title>
+    <link rel="stylesheet" href="stlye.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>    
+
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101922",
+                        "accent-pink": "#ec4899",
+                        "accent-purple": "#8b5cf6",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+</script>
+
+</head>
+<body>
+
+<section class="nav-section">
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="Logo">
+                    <div class="khamu">
+                        <div class="gradient-text"><a href="#">ขาหมู</a></div>
+                        <div class="gradient-text-color"><a href="#">ภูเก็ต</a></div>
+                    </div>
+                    <div class="dashboard"><a href="#">Dashboard</a></div>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="btm"><box-icon name="home-heart"></box-icon>ถาพรวมร้านค้า</a>
+                    </li> 
+                    <li>
+                        <a href="#" class="btm"><span class="material-symbols-outlined">inventory_2</span>สต็อกสินค้า</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btm"><box-icon name='user-check' ></box-icon>ลูกค้าสมาชิก</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btm"><box-icon name='chalkboard' ></box-icon>การวิเคราะห์หน้าร้าน</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btm"><box-icon name='cog' ></box-icon>การตั้งค่า</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+</section>
+
+    <section class="main-content font-display">
+        
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">สต็อกสินค้า</h1>
+
+        <div class="grid grid-cols-4 gap-4 mb-6">
+            <div class="bg-slate-100 p-4 rounded-xl ">
+                <div class="text-sm font-semibold text-gray-600 mb-1">ยอดขายทั้งหมด</div>
+                <div class="text-3xl font-bold text-gray-800">฿25,450</div>
+                <div class="text-sm text-green-500 font-bold mt-1">+7%</div>
+            </div>
+            <div class="bg-slate-100 p-4 rounded-xl">
+                <div class="text-sm font-semibold text-gray-600 mb-1">กำไร</div>
+                <div class="text-3xl font-bold text-gray-800">5,060฿</div>
+                <div class="text-sm text-green-500 font-bold mt-1">+8%</div>
+            </div>
+            <div class="bg-slate-100 p-4 rounded-xl">
+                <div class="text-sm font-semibold text-gray-600 mb-1">รายการสั่งซื้อ</div>
+                <div class="text-3xl font-bold text-gray-800">310</div>
+                <div class="text-sm text-green-500 font-bold mt-1">+21%</div>
+            </div>
+            <div class="bg-slate-100 p-4 rounded-xl relative">
+                <div class="absolute top-4 right-4 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white"></div>
+                <div class="text-sm font-semibold text-gray-600 mb-1">สต็อกสินค้าคงเหลือ</div>
+                <div class="text-3xl font-bold text-gray-800">24<span class="text-xl text-gray-400">/238</span></div>
+                <div class="text-sm text-yellow-500 font-bold mt-1">10%</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+            
+            <div class="bg-white border border-gray-200 p-6 rounded-xl col-span-1">
+                <div class="mb-4">
+                    <div class="text-sm font-semibold text-gray-600">ยอดขายประจำวัน</div>
+                    <div class="text-3xl font-bold text-gray-800">฿3,500</div>
+                    <div class="text-sm text-green-500 mt-1">7 วันล่าสุด <span class="font-bold">+15%</span></div>
+                </div>
+                
+                <div class="flex items-end justify-between h-40 gap-2 mt-6">
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-yellow-200 rounded-t-sm h-[30%]"></div>
+                        <div class="w-6 bg-green-400 rounded-b-sm h-[20%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Mon</div>
+                    </div>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-yellow-200 rounded-t-sm h-[20%]"></div>
+                        <div class="w-6 bg-green-400 rounded-b-sm h-[50%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Tue</div>
+                    </div>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-yellow-200 rounded-t-sm h-[10%]"></div>
+                        <div class="w-6 bg-green-400 rounded-b-sm h-[60%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Wed</div>
+                    </div>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-yellow-200 rounded-t-sm h-[25%]"></div>
+                        <div class="w-6 bg-green-400 rounded-b-sm h-[45%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Thu</div>
+                    </div>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-yellow-200 rounded-t-sm h-[10%]"></div>
+                        <div class="w-6 bg-green-400 rounded-b-sm h-[70%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Fri</div>
+                    </div>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-gray-200 rounded-t-sm h-[15%]"></div>
+                        <div class="w-6 bg-yellow-200 rounded-b-sm h-[50%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Sat</div>
+                    </div>
+                    <div class="flex flex-col items-center w-full">
+                        <div class="w-6 bg-gray-200 rounded-t-sm h-[10%]"></div>
+                        <div class="w-6 bg-yellow-200 rounded-b-sm h-[60%]"></div>
+                        <div class="text-xs text-blue-800 font-semibold mt-2">Sun</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 p-6 rounded-xl col-span-1 lg:col-span-2">
+                <div class="mb-6">
+                    <div class="text-sm font-semibold text-gray-600">สินค้าขายดี</div>
+                    <div class="text-3xl font-bold text-gray-800">฿2,800</div>
+                    <div class="text-sm text-gray-400">เดือนนี้</div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center text-blue-900 font-medium">
+                        <span>ข้าวขาหมู</span>
+                        <span>3092</span>
+                    </div>
+                    <div class="flex justify-between items-center text-blue-900 font-medium">
+                        <span>ข้าวหมูแดง</span>
+                        <span>3002</span>
+                    </div>
+                    <div class="flex justify-between items-center text-blue-900 font-medium">
+                        <span>ข้าวมันไก่</span>
+                        <span>1954</span>
+                    </div>
+                    <div class="flex justify-between items-center text-blue-900 font-medium">
+                        <span>ข้าวมันไก่ทอด</span>
+                        <span>1875</span>
+                    </div>
+                    <div class="flex justify-between items-center text-blue-900 font-medium">
+                        <span>ข้าวหน้าเป็ด</span>
+                        <span>1023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-50 border border-gray-200 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-700 mb-4">ธุรกรรมล่าสุด</h3>
+            <div class="space-y-4">
+                <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                    <div>
+                        <div class="font-bold text-gray-800">คุณพิมลภัส</div>
+                        <div class="text-sm text-blue-500">Order #310</div>
+                    </div>
+                    <div class="font-bold text-gray-800">฿120.00</div>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                    <div>
+                        <div class="font-bold text-gray-800">คุณธนภัทร</div>
+                        <div class="text-sm text-blue-500">Order #309</div>
+                    </div>
+                    <div class="font-bold text-gray-800">฿85.00</div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <div class="font-bold text-gray-800">คุณณัฐนนท์</div>
+                        <div class="text-sm text-blue-500">Order #308</div>
+                    </div>
+                    <div class="font-bold text-gray-800">฿250.00</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>      

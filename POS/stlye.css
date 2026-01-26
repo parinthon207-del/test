@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.nav-con{
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo {
+    
+    
+}
+.dashboard a{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font: optional;
+    margin: -12rem 0 0 0;
+    
+}
+.dashboard a{
+    background: #646464;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;  
+}
+.dashboard{
+    margin: -0.6rem 0 0 0;
+}
+.menu{
+    list-style: none;
+    align-items: center;
+    margin: 1rem 0 0 -0.5rem;
+}
+.menu li{
+    margin: 0.5rem; /*ระยะห่างbox*/
+    display: flex;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px; 
+    justify-content: space-between;
+}
+
+.gradient-text {
+    background: linear-gradient(to top left, #000000, #E4B8B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: none;
+}
+.gradient-text-color a{
+    display: flex; 
+    text-decoration: none;  
+}
+.gradient-text a{
+    display: flex; 
+    text-decoration: none;  
+}
+.gradient-text-color {
+    background: linear-gradient(to top left, #818385, #c9e0f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.khamu{
+    display: flex;
+    margin: -0.5rem 0 0 0;
+}
+
+
+.menu .btm{
+    background-color: white;
+    padding: 0.45rem 1rem; /* เพิ่ม padding ด้านข้างหน่อยจะได้ไม่ชิดขอบ */
+    border-radius: 8px;
+    
+    /* ส่วนสำคัญที่ทำให้ไอคอนอยู่บรรทัดเดียวกับข้อความ */
+    display: flex;          /* เปิดโหมด Flexbox */
+    align-items: center;    /* จัดให้ไอคอนกับข้อความอยู่กึ่งกลางแนวตั้ง (ไม่ลอยสูงหรือต่ำไป) */
+    justify-content: flex-start;
+    gap: 16px;              /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    
+    /* ค่าเดิมของคุณ */
+    width: 300px;
+    border: 1px solid #AEB4BB;
+    color: black;           /* ย้ายสีมาตรงนี้เพื่อให้ชัวร์ */
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+menu .btm .material-symbols-outlined{
+    font-size: 24px;
+}
+menu .btm .home{
+    font-size: 24px;
+}
+.nav-section{
+    background-color: #F7FAFC;
+    margin: 1rem;
+    border-radius: 8px;
+    width:380px;
+    min-height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+body{
+    display: flex;
+}
+.stock{
+    
+}
+.menu .btm:hover {
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.menu li.btm:hover{
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.menu li.btm:visited{
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.monitor-bar {
+    display: flex;
+}
+.monitor-bar li{
+    list-style: none;
+    margin: 1rem 1rem 1rem 0;
+    width: 182px;
+    height: 80px;
+}
+
+.monitor-bar li a{
+    display: flex;
+    background-color: #CFDBE8;
+    padding: 1rem;
+    border-radius: 8px;
+}
+/* ลบหรือแก้ตรง section เดิม */
+/* section { ... ลบอันเก่าที่ fix width ออก หรือเปลี่ยนชื่อ class ... } */
+
+/* แนะนำให้เปลี่ยนเป็นแบบนี้ครับ */
+.sidebar {
+    background-color: #F7FAFC;
+    margin: 1rem;
+    border-radius: 8px;
+    width: 280px; /* ลดความกว้างเมนูลงหน่อยให้สมดุล */
+    height: 95vh; /* ให้เต็มความสูงจอ */
+    flex-shrink: 0; /* ไม่ให้เมนูหด */
+}
+
+/* เพิ่ม class สำหรับส่วนเนื้อหาด้านขวา */
+.main-content {
+    flex-grow: 1; /* สั่งให้ขยายเต็มพื้นที่ที่เหลือ */
+    padding: 2rem;
+    background-color: #fff; /* หรือสีพื้นหลังตามดีไซน์ */
+    overflow-y: auto; /* ให้เลื่อนลงได้ถ้าเนื้อหาเยอะ */
+}
