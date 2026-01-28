@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Thai", bold;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.main-container{
+    max-width: 1140px;
+    margin: 1rem;
+}
+.nav-con{
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard a{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font: optional;
+}
+.menu{
+    list-style: none;
+    align-items: center;
+}
+.menu li{
+    margin: 0 0.5rem 0.5rem 0; /*ระยะห่างbox*/
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+.gradient-text {
+    background: linear-gradient(to top left, #000000, #E4B8B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    flex: none;
+}
+ 
+.gradient-text-color a{
+    text-decoration: none;
+}
+.dashboard a{
+    background: #646464;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;  
+}
+.gradient-text a{
+    display: flex;  
+    text-decoration: none;
+}
+.khamu{
+    display: flex;
+}
+.gradient-text-color {
+    background: linear-gradient(to top left, #818385, #c9e0f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.menu .btm{
+    background-color: white;
+    padding: 0.45rem;
+    border-radius: 13px;
+    display: inline-block; /* หรือ block เพื่อให้กำหนด width ได้ */
+    width: 300px;          /* กำหนดความกว้างที่ต้องการ (ปรับเลขได้ตามชอบ) */
+    border: 2px solid #AEB4BB;
+    font-size: 20px;
+    transition: all 0.3s ease;
+   
+}
+.menu .btm:hover {
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.menu li.btm:hover{
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.menu li.btm:visited{
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.side-bar{ /*bg*/
+    background-color: #F7FAFC;
+    border-radius: 8px;
+    width:380px;
+    min-height: 100vh;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+body{
+    display: flex;
+}
+.edit-page{
+    margin: 3rem;
+}
+.box-enter-text p{
+    background-color: #F7FAFC;
+    border: 1px solid #CFDBE8;
+    border-radius: 8px;
+
+    width: 400px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.box-name{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
