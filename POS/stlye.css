@@ -118,7 +118,7 @@ menu .btm .home{
     border-radius: 8px;
     width:380px;
     min-height: 100vh;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 body{
     display: flex;
@@ -179,9 +179,4 @@ body{
     padding: 2rem;
     background-color: #fff; /* หรือสีพื้นหลังตามดีไซน์ */
     overflow-y: auto; /* ให้เลื่อนลงได้ถ้าเนื้อหาเยอะ */
-}
-.main-content {
-    padding: 0 -1rem 0 -1rem;
-    flex: 1;
-    max-width: auto; /* (แนะนำให้ลบบรรทัดนี้ออกครับ เพราะค่า auto ไม่มีผลใน max-width) */
 }
