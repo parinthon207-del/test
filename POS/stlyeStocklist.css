@@ -67,7 +67,7 @@
     font-size: 2rem;
     font-weight: bold;
 }
-.menu .btn{
+.menu .btm{
     background-color: white;
     padding: 0.45rem;
     border-radius: 13px;
@@ -75,7 +75,26 @@
     width: 300px;          /* กำหนดความกว้างที่ต้องการ (ปรับเลขได้ตามชอบ) */
     border: 2px solid #AEB4BB;
     font-size: 20px;
+    transition: all 0.3s ease;
    
+}
+.menu .btm:hover {
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.menu li.btm:hover{
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+}
+.menu li.btm:visited{
+    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
+    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
+    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
 }
 .side-bar{ /*bg*/
     background-color: #F7FAFC;
@@ -101,7 +120,7 @@ body{
     height: 50px;
     width: 100%;
     max-width: 900px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     border-radius: 10px;
     color: #4D7399;
     font-weight: 500;
@@ -123,7 +142,7 @@ body{
     display: flex;
     gap: 10px; /* ระยะห่างระหว่างปุ่มแต่ละก้อน */
 }
-.filter-btn {
+.filter-btm {
     padding: 8px 16px;
     background-color: #E8EDF2;      /* สีพื้นหลังเทาอ่อน */
     color: #959fa8;                 /* สีตัวหนังสือ */
@@ -133,12 +152,15 @@ body{
     cursor: pointer;
     transition: 0.2s;               /* เอฟเฟกต์นุ่มๆ ตอนชี้ */
 }
-.filter-btn:hover {
+.filter-btm:hover {
     background-color: #D0D6DC;
 }
 .table-container {
     margin-top: 20px;
     width: 100%;
+    background-color: #F7FAFC;
+    border:1px solid #CFDBE8;
+    border-radius: 8px;
 }
  
 .stock-table {
@@ -177,8 +199,8 @@ body{
 }
  
 .status.warning {
-    background-color: #F8E391; /* สีเหลืองใกล้หมด */
-    color: #856404;
+    background-color: #F8E36A; /* สีเหลืองใกล้หมด */
+    color: black;
 }
  
 .status.ok {
@@ -187,7 +209,7 @@ body{
 }
  
 .status.danger {
-    background-color: #F1948A; /* สีแดงหมดสต็อก */
+    background-color: #F97369; /* สีแดงหมดสต็อก */
     color: white;
 }
  
