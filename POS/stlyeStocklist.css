@@ -67,36 +67,15 @@
     font-size: 2rem;
     font-weight: bold;
 }
-.menu .btm{
+.menu .btn{
     background-color: white;
-    padding: 0.45rem 1rem; /* เพิ่ม padding ด้านข้างหน่อยจะได้ไม่ชิดขอบ */
-    border-radius: 8px;
-    
-    /* ส่วนสำคัญที่ทำให้ไอคอนอยู่บรรทัดเดียวกับข้อความ */
-    display: flex;          /* เปิดโหมด Flexbox */
-    align-items: center;    /* จัดให้ไอคอนกับข้อความอยู่กึ่งกลางแนวตั้ง (ไม่ลอยสูงหรือต่ำไป) */
-    justify-content: flex-start;
-    gap: 16px;              /* ระยะห่างระหว่างไอคอนกับข้อความ */
-    
-    /* ค่าเดิมของคุณ */
-    width: 300px;
-    border: 1px solid #AEB4BB;
-    color: black;           /* ย้ายสีมาตรงนี้เพื่อให้ชัวร์ */
-    text-decoration: none;
+    padding: 0.45rem;
+    border-radius: 13px;
+    display: inline-block; /* หรือ block เพื่อให้กำหนด width ได้ */
+    width: 300px;          /* กำหนดความกว้างที่ต้องการ (ปรับเลขได้ตามชอบ) */
+    border: 2px solid #AEB4BB;
     font-size: 20px;
-    transition: all 0.3s ease;
-}
-.menu .btm:hover {
-    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
-    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
-    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
-}
-.menu li.btm:visited{
-    background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น (สีเทาฟ้า) */
-    border-color: #94a3b8;     /* เปลี่ยนสีขอบให้เข้มตาม */
-    transform: translateX(5px); /* (ลูกเล่นเสริม) ขยับปุ่มไปทางขวานิดนึง */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+   
 }
 .side-bar{ /*bg*/
     background-color: #F7FAFC;
@@ -104,6 +83,7 @@
     width:380px;
     min-height: 100vh;
     padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 body{
     display: flex;
@@ -115,7 +95,6 @@ body{
     max-width: auto; /* (แนะนำให้ลบบรรทัดนี้ออกครับ เพราะค่า auto ไม่มีผลใน max-width) */
     padding: 2rem;
     margin: 1rem;
-    font-size: 2rem;
 }
 .search-box{
     background-color: #E8EDF2;
@@ -134,7 +113,7 @@ body{
 .filter-container{
     display: flex;
     justify-content: space-between; /* ดันลูก 2 คนไปคนละฝั่ง */
-    margin-top: 0.5rem;               /* เว้นห่างจากช่องค้นหา */
+    margin-top: 1rem;               /* เว้นห่างจากช่องค้นหา */
     width: 100%;
     max-width: 800px;               /* ปรับให้เท่ากับช่องค้นหา */
     flex-wrap: wrap;                /* ถ้าจอมือถือเล็กมาก ให้ปัดลงบรรทัดใหม่ได้ */
@@ -144,7 +123,7 @@ body{
     display: flex;
     gap: 10px; /* ระยะห่างระหว่างปุ่มแต่ละก้อน */
 }
-.filter-btm {
+.filter-btn {
     padding: 8px 16px;
     background-color: #E8EDF2;      /* สีพื้นหลังเทาอ่อน */
     color: #959fa8;                 /* สีตัวหนังสือ */
@@ -153,20 +132,21 @@ body{
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s;               /* เอฟเฟกต์นุ่มๆ ตอนชี้ */
-    margin-top: 0.5rem;
 }
-.filter-btm:hover {
+.filter-btn:hover {
     background-color: #D0D6DC;
 }
 .table-container {
     margin-top: 20px;
     width: 100%;
-} 
+}
+ 
 .stock-table {
     width: 100%;
     border-collapse: collapse; /* ทำให้เส้นตารางไม่ซ้อนกัน */
     font-size: 16px;
 }
+ 
 /* ตกแต่งส่วนหัวตาราง */
 .stock-table th {
     text-align: left;
@@ -174,6 +154,7 @@ body{
     border-bottom: 2px solid #E8EDF2; /* เส้นใต้หัวข้อ */
     color: #4D7399;
 }
+ 
 /* ตกแต่งเนื้อหาแต่ละแถว */
 .stock-table td {
     padding: 15px;
@@ -196,8 +177,8 @@ body{
 }
  
 .status.warning {
-    background-color: #F8E36A; /* สีเหลืองใกล้หมด */
-    color: black;
+    background-color: #F8E391; /* สีเหลืองใกล้หมด */
+    color: #856404;
 }
  
 .status.ok {
@@ -218,10 +199,4 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-.table-card{
-    margin-top: 1rem;
-    margin-bottom: auto;
-    background-color: #F7FAFC;
-    border-radius: 10px;
-    border:1px solid #CFDBE8;
-}
+ 
